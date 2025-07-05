@@ -1,0 +1,21 @@
+{
+  "name": "letsconnectb",
+  "version": "1.0.0",
+  "description": "Connect and make connection",
+  "main": "index.js",
+  "scripts": {
+    "start":"node src/app.js",
+    "dev":"nodemon src/app.js"
+  },
+  "keywords": [
+    "node.js",
+    "javascript",
+    "backend"
+  ],
+  "author": "Sanjay Lashkar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
