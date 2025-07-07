@@ -2,20 +2,24 @@ const express = require("express");
 
 const app = express()
 
+app.get("/user",(req,res) => {
+    res.send({myname:"sanjay",age:"100"})
+});
 
-// app.use("/",(req,res)=>{
-//     res.send("hello sanjay from node js");
-// });
+app.post("/user",(req,res) => {
+    res.send("add data to server ")
+});
 
+app.delete("/user",(req,res)=>{
+    res.send("data deleted")
+})
 
-app.use("/home",(req,res)=>{
-    res.send("hello home from node js");
+app.use("/home/new",(req,res)=>{
+    res.send("hello home from new node js");
 });
 
 
-app.use("/about",(req,res)=>{
-    res.send("hello about from node js");
-});
+
 
 app.listen(7777, ()=> {
     console.log("server is successfully run on port 7777")
