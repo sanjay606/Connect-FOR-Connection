@@ -2,23 +2,18 @@ const express = require("express");
 
 const app = express()
 
+
+
+app.use("/user",(req,res,next) => {
+    res.send("hello next")
+    // next()
+
+});
+
 app.get("/user",(req,res) => {
-    res.send({myname:"sanjay",age:"100"})
-});
-
-app.post("/user",(req,res) => {
-    res.send("add data to server ")
-});
-
-app.delete("/user",(req,res)=>{
-    res.send("data deleted")
-})
-
-app.use("/home/new",(req,res)=>{
-    res.send("hello home from new node js");
-});
-
-
+    res.send("new hlw")
+}
+)
 
 
 app.listen(7777, ()=> {
