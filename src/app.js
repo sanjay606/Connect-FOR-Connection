@@ -4,7 +4,7 @@ const app = express()
 
 
 
-app.use("/user",(req,res,next) => {
+app.use("/user",(err,req,res,next) => {
     res.send("hello next")
     // next()
 
