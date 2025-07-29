@@ -11,7 +11,7 @@ app.use("/user",(err,req,res,next) => {
 });
 
 app.get("/user",(req,res) => {
-    res.send("new hlw")
+    res.send("new hlwwwww")
 }
 )
 
